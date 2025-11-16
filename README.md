@@ -24,7 +24,7 @@ slurm-test
 #  -V, --version  Print version
 
 ```
-#### Testing cpu usage
+## Testing cpu usage
 
 ```bash
 
@@ -91,7 +91,7 @@ htop -p 1755698
 
 ```
 
-#### Testing memory usage
+## Testing memory usage
 
 Instead of allowing our program to run (but with limits) slurm will kill our job if our program requests too much memory.
 
@@ -146,29 +146,29 @@ sbatch --output slurm-%j.out --error slurm-%j.err --mem 210m --wrap "/usr/bin/ti
 # Submitted batch job 29703
 
 cat slurm-29703.err
-	Command being timed: "slurm-test mem 100"
-	User time (seconds): 0.00
-	System time (seconds): 0.11
-	Percent of CPU this job got: 95%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 199576
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 7
-	Minor (reclaiming a frame) page faults: 49422
-	Voluntary context switches: 7
-	Involuntary context switches: 3
-	Swaps: 0
-	File system inputs: 1752
-	File system outputs: 8
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 0
+#	Command being timed: "slurm-test mem 100"
+#	User time (seconds): 0.00
+#	System time (seconds): 0.11
+#	Percent of CPU this job got: 95%
+#	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+#	Average shared text size (kbytes): 0
+#	Average unshared data size (kbytes): 0
+#	Average stack size (kbytes): 0
+#	Average total size (kbytes): 0
+#	Maximum resident set size (kbytes): 199576
+#	Average resident set size (kbytes): 0
+#	Major (requiring I/O) page faults: 7
+#	Minor (reclaiming a frame) page faults: 49422
+#	Voluntary context switches: 7
+#	Involuntary context switches: 3
+#	Swaps: 0
+#	File system inputs: 1752
+#	File system outputs: 8
+#	Socket messages sent: 0
+#	Socket messages received: 0
+#	Signals delivered: 0
+#	Page size (bytes): 4096
+#	Exit status: 0
 
 # the above shows that the programs memory usage (Maximum resident set size) peaked at 199576 kilobytes or 199.58 Mb
 
