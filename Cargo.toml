@@ -1,0 +1,16 @@
+
+[package]
+name = "slurm_test"
+version = "0.0.1"
+authors = ["sc13-bioinf"]
+edition = "2024"
+
+[[bin]]
+name = "slurm-test"
+path = "src/main/rust/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+log = "0.4"
+thiserror = "1.0"
+
